@@ -9,12 +9,12 @@ export const StyledCloseIcon = styled(CloseIcon)`
     border-radius: 7px;
     margin: 5px 0;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 25px;
    `
 export const StyledIconContainer = styled.div`
     display: flex;
     background: white;
-    width: 25px;
+    width: 27px;
     border-radius: 5px;
     margin-bottom: 10px;
     cursor:pointer;

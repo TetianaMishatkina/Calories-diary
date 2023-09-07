@@ -14,7 +14,7 @@ export const StyledCloseIcon = styled(CloseIcon)`
 export const StyledIconContainer = styled.div`
     display: flex;
     background: white;
-    width: 25px;
+    width: 27px;
     border-radius: 5px;
     margin-bottom: 10px;
     cursor:pointer;

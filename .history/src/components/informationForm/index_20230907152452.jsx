@@ -23,9 +23,10 @@ export const InformationForm = ({ date }) => {
     const totalMealsToday = dataDetails?.[format(date, 'yyyy-MM-dd')] || {}
 
 
-    const totalCaloeriesToday = Object.values(totalMealsToday).flat().reduce((acc, item) => {
-        return acc + item.nf_calories
-    }, 0)
+    console.log('HEj', Object.values(totalMealsToday).flatMap((meal) => {
+        console.log('dsadas', meal)
+    }))
+
 
 
     return (
@@ -73,7 +74,8 @@ export const InformationForm = ({ date }) => {
                 <StyledDateContainer>
                     <StyledDate> {format(date, 'yyyy-MM-dd')}</StyledDate>
                 </StyledDateContainer>
-                <StyledSummary>Total calories today:  {Number(totalCaloeriesToday).toFixed(2)}</StyledSummary>
+                <StyledSummary>Total calories today:</StyledSummary>
+
             </StyledSummarySection>
 
         </StyledContent>

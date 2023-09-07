@@ -13,7 +13,8 @@ import {
 export const CaloriesOfMeal = ({ value, calories, foodToRemove }) => {
 
     let totalMealCalories = 0;
-    const result = totalMealCalories + calories;
+    const result = calories + totalMealCalories;
+    console.log('calories', value)
 
 
     return (

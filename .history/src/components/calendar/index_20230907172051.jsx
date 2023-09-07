@@ -32,6 +32,7 @@ export const MyCalendar = (props) => {
         <StyledContentContainer>
             <StyledIconContainer>
                 <ArrowBackIcon
+
                     onClick={() => {
                         navigate(-1)
                     }} />

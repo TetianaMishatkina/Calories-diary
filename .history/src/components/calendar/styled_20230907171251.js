@@ -6,19 +6,11 @@ import CloseIcon from '@mui/icons-material/Close';
 export const StyledCloseIcon = styled(CloseIcon)`
     background: #ff5151;
     color: white;
-    border-radius: 7px;
+    border-radius: 8px;
     margin: 5px 0;
     cursor: pointer;
-    font-size: 24px;
    `
-export const StyledIconContainer = styled.div`
-    display: flex;
-    background: white;
-    width: 25px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor:pointer;
-    `
+export const StyledIconContainer = styled.div``
 
 export const StyledCalendar = styled(Calendar)`
 cursor: pointer;

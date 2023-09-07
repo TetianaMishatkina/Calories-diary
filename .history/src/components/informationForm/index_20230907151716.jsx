@@ -20,12 +20,9 @@ import { usePostItemDetailes } from '../../hooks/usePostItemDetails'
 
 export const InformationForm = ({ date }) => {
     const { dataDetails, postItems, handleRemoveFood } = usePostItemDetailes()
-    const totalMealsToday = dataDetails?.[format(date, 'yyyy-MM-dd')] || {}
+    const totalCaloerisToday = dataDetails[format(date, 'yyyy-MM-dd')]
 
-
-    const totalCaloeriesToday = Object.values(totalMealsToday).flat().reduce((acc, item) => {
-        return acc + item.nf_calories
-    }, 0)
+    console.log('food', totalCaloerisToday)
 
 
     return (
@@ -73,7 +70,8 @@ export const InformationForm = ({ date }) => {
                 <StyledDateContainer>
                     <StyledDate> {format(date, 'yyyy-MM-dd')}</StyledDate>
                 </StyledDateContainer>
-                <StyledSummary>Total calories today:  {Number(totalCaloeriesToday).toFixed(2)}</StyledSummary>
+                <StyledSummary>Total calories today:</StyledSummary>
+
             </StyledSummarySection>
 
         </StyledContent>

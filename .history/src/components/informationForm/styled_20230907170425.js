@@ -6,7 +6,7 @@ export const StyledContent = styled.div`
         flex-direction: column;
         width: 100%;
         height: 100%;
-        max-height: 600px;
+        max-height: 550px;
         background-color:white;
         box-shadow: 1px 1px 19px 6px rgba(66, 68, 90, 1) !important;
         border-radius: 10px;

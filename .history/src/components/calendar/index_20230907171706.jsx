@@ -31,10 +31,9 @@ export const MyCalendar = (props) => {
     return (
         <StyledContentContainer>
             <StyledIconContainer>
-                <ArrowBackIcon
-                    onClick={() => {
-                        navigate(-1)
-                    }} />
+                <ArrowBackIcon onClick={() => {
+                    navigate(-1)
+                }} />
             </StyledIconContainer>
 
 

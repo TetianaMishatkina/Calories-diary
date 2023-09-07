@@ -3,19 +3,15 @@ import { momentLocalizer } from 'react-big-calendar'
 
 import moment from 'moment'
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import {
-    StyledCalendar, StyledModal, StyledContentContainer, StyledCloseIcon,
-    StyledIconContainer
-} from "./styled"
+import { StyledCalendar, StyledModal, StyledContentContainer, StyledCloseIcon } from "./styled"
 import { InformationForm } from '../informationForm';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useNavigate } from 'react-router-dom';
 
 
 const localizer = momentLocalizer(moment)
 
 export const MyCalendar = (props) => {
-    const navigate = useNavigate()
+    const navigate = useWindowNavigate()
     const [open, setOpen] = useState(false);
     const [selectedDate, setSelectedDate] = useState(null);
 
@@ -30,13 +26,7 @@ export const MyCalendar = (props) => {
 
     return (
         <StyledContentContainer>
-            <StyledIconContainer>
-                <ArrowBackIcon
-                    onClick={() => {
-                        navigate(-1)
-                    }} />
-            </StyledIconContainer>
-
+            <ArrowBackIcon />
 
             <StyledCalendar
                 localizer={localizer}

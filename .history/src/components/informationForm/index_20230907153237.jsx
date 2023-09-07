@@ -73,7 +73,8 @@ export const InformationForm = ({ date }) => {
                 <StyledDateContainer>
                     <StyledDate> {format(date, 'yyyy-MM-dd')}</StyledDate>
                 </StyledDateContainer>
-                <StyledSummary>Total calories today:  {Number(totalCaloeriesToday).toFixed(2)}</StyledSummary>
+                <StyledSummary>Total calories today:  {Number(totalCaloeriesToday).toFixed(1)}</StyledSummary>
+
             </StyledSummarySection>
 
         </StyledContent>
